@@ -1,0 +1,143 @@
+h1,h2{
+    color: teal;
+    background-color: tomato;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline wavy teal;
+    font-size: 80px;
+    font-family: Fantasy, Segoe UI,Futura, Arial, sans-serif;
+    
+}
+
+button{
+    color:violet;
+    background-color: wheat;
+}
+
+
+p{
+    color: rgb(89,151,0);
+    background-color: #5FCF08;
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 3px;
+}
+a{
+    text-decoration: none;
+}
+
+/* using unique id */
+#signup{
+    color:green;
+}
+/* using class */
+.tag{
+    background : #e76f51;
+}
+
+/* style a inside li*/
+li a{
+    color:red;
+}
+
+/* style a button right after a h2*/
+h2+button{
+    color:red;
+}
+
+/* style a button direct child of a h2*/
+h2>button{
+    color:blue;
+}
+
+/* attribute selector */
+input[type="password"]{
+    color:yellow;
+}
+
+section[class="post"]{
+    background-color: violet;
+}
+section.post{
+    color:rebeccapurple;
+
+}
+/* *contains, $end with */
+a[href*="example"]{
+    color:firebrick
+}
+
+/* pseudo classes */
+a:hover{
+    color:orange;
+}
+
+button:active{
+    background-color: palegreen;
+}
+
+input[type="checkbox"] :checked{
+    box-shadow:0 0 0 3px hotpink;
+}
+.post:nth-of-type(2n){
+    background-color: palevioletred;
+}
+
+/* pseudo elementes */
+p::first-letter{
+    font-size:30px;
+}
+
+p::selection{
+    background-color:yellowgreen;
+}
+
+/* inherit */
+button, input{
+    color:inherit;
+}
+
+div{
+    width:200px;
+    background-color: thistle;
+    
+}
+
+#one{
+    background-color: #ffcdb2;
+    border-width:5px;
+    border-color:black;
+    border-style: solid;
+    padding-left:100px;
+    /*  */
+    margin-bottom:50px;
+}
+
+
+#two{
+    background-color: #ffb4a2;
+    border-width:5px;
+    border-color:black;
+    border-style: solid;
+    border-left-style:dotted;
+    padding-right:100px;
+}
+
+/* width |style|color */
+#three{
+    background-color: #e5989b;
+    border: 4px solid black;
+    border-left-style: double;
+    border-radius: 10px;
+    /* border-radius: 50%; to create circle */
+}
+
+#four{
+    /* top right bottom left; vertical horizontal, top horizontal bottom */
+    padding: 10px 20px 30px 40px;
+    padding: 10px 40px;
+}
+
+body{
+    margin:10px;
+}
